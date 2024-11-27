@@ -19,7 +19,7 @@ sudo nano /etc/systemd/system/laptop_usage.service
 Add Service Configuration:
 Add the following configuration to the service file:
 text
------------------------------------------------------------
+
 [Unit]
 Description=Laptop Usage Logger
 After=multi-user.target
@@ -32,7 +32,7 @@ Environment=HOME=/home/your_username
 
 [Install]
 WantedBy=multi-user.target
-------------------------------------------------------------
+
 Step 3: Enable and Start the Service
 Reload Systemd Daemon:
 After creating the service file, reload the systemd manager configuration:
